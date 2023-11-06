@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Little Update">
-      <change afterPath="$PROJECT_DIR$/assets/pdf/resume.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="CV Update">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendemail.php" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
       <workItem from="1699220025024" duration="9034000" />
       <workItem from="1699229276651" duration="142000" />
       <workItem from="1699229518712" duration="126000" />
-      <workItem from="1699230471910" duration="365000" />
+      <workItem from="1699230471910" duration="412000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -99,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699229637302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CV Update">
+      <option name="closed" value="true" />
+      <created>1699230878665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699230878665</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Little Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Little Update" />
+    <MESSAGE value="CV Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="CV Update" />
   </component>
 </project>
