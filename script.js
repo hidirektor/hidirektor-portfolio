@@ -5,6 +5,7 @@ const workEls = document.querySelectorAll(".work-box");
 const workImgs = document.querySelectorAll(".work-img");
 const mainEl = document.querySelector("main");
 const yearEl = document.querySelector(".footer-text span");
+const navIcon = document.getElementById("nav-icon1");
 
 const toggleNav = () => {
   nav.classList.toggle("hidden");
@@ -24,6 +25,20 @@ const toggleNav = () => {
 
 btnToggleNav.addEventListener("click", toggleNav);
 
+const toggleNavHam = () => {
+  nav.classList.toggle("hidden");
+  // Prevent screen from scrolling when menu is opened
+  document.body.classList.toggle("lock-screen");
+
+  if (nav.classList.contains("hidden")) {
+    navIcon.classList.remove("open");
+  } else {
+    navIcon.classList.add("open");
+  }
+};
+
+navIcon.addEventListener("click", toggleNavHam);
+
 navMenu.addEventListener("click", (e) => {
   if (e.target.localName === "a") {
     toggleNav();
@@ -41,17 +56,17 @@ document.body.addEventListener("keydown", (e) => {
 workImgs.forEach((workImg) => workImg.classList.add("transform"));
 
 let observer = new IntersectionObserver(
-  (entries) => {
-    const [entry] = entries;
-    const [textbox, picture] = Array.from(entry.target.children);
-    if (entry.isIntersecting) {
-      picture.classList.remove("transform");
-      Array.from(textbox.children).forEach(
-        (el) => (el.style.animationPlayState = "running")
-      );
-    }
-  },
-  { threshold: 0.3 }
+    (entries) => {
+      const [entry] = entries;
+      const [textbox, picture] = Array.from(entry.target.children);
+      if (entry.isIntersecting) {
+        picture.classList.remove("transform");
+        Array.from(textbox.children).forEach(
+            (el) => (el.style.animationPlayState = "running")
+        );
+      }
+    },
+    { threshold: 0.3 }
 );
 
 workEls.forEach((workEl) => {
