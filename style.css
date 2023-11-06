@@ -106,6 +106,10 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 /* Icon 1 */
 .nav-icon, .nav-icon.open {
   width: 60px;
