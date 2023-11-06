@@ -22,7 +22,7 @@ try {
     $mail->Host       = 'mail.hidirektor.com.tr';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'noreply@hidirektor.com.tr';
-    $mail->Password   = '&#4?{oKWoOM0';
+    $mail->Password   = '';
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
