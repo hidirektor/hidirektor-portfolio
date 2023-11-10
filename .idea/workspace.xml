@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Lebara Update">
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Bug Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -85,7 +85,10 @@
       <workItem from="1699283732171" duration="16000" />
       <workItem from="1699283843267" duration="62000" />
       <workItem from="1699286557046" duration="368000" />
-      <workItem from="1699299429894" duration="41000" />
+      <workItem from="1699299429894" duration="92000" />
+      <workItem from="1699341468072" duration="334000" />
+      <workItem from="1699421822787" duration="134000" />
+      <workItem from="1699615858337" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -199,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699286893202</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Bug Fix">
+      <option name="closed" value="true" />
+      <created>1699299514385</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699299514385</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +227,7 @@
     <MESSAGE value="ScrollBar" />
     <MESSAGE value="Little Update" />
     <MESSAGE value="Lebara Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lebara Update" />
+    <MESSAGE value="Bug Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix" />
   </component>
 </project>
