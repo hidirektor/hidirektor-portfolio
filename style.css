@@ -1323,3 +1323,20 @@ input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
 }
+
+@keyframes pulsate {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #ff5e99;
+    background-image: linear-gradient(45deg, #ff5e99, #1c2951);
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+.text-degrade {
+  animation: pulsate 3s infinite;
+}
