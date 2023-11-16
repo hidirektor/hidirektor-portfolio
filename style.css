@@ -658,7 +658,7 @@ body.light .header {
   }
 }
 
-.logo.hide {
+/*.logo.hide {
   opacity: 0;
 }
 
@@ -668,7 +668,7 @@ body.light .header {
 
 .logo.to-bottom {
   transform: scale(0.4) translateY(150px);
-}
+}*/
 
 body.dark .logo {
   filter: invert(97%) grayscale(100%) opacity(0.6);
