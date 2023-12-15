@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/assets/images/work/gelkurye-mobile-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/gelkurye-mobile-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/gelkurye-mobile-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/gelkurye-mobile-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/gelkurye-mobile-5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +110,11 @@
       <workItem from="1701332106778" duration="97000" />
       <workItem from="1701867872962" duration="35000" />
       <workItem from="1702320062829" duration="222000" />
-      <workItem from="1702320422728" duration="830000" />
+      <workItem from="1702320422728" duration="872000" />
+      <workItem from="1702393992606" duration="11000" />
+      <workItem from="1702505079911" duration="17000" />
+      <workItem from="1702563938889" duration="11000" />
+      <workItem from="1702605825350" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -289,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701332158857</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Update">
+      <option name="closed" value="true" />
+      <created>1702322251155</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702322251155</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
