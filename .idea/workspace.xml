@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Project Update">
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Store Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/social-links/appgallery.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/social-links/appgallery.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/social-links/appstore.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/social-links/appstore.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hidir/PhpstormProjects/hidirektor-portfolio/assets/images/work&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hidir/PhpstormProjects/hidirektor-portfolio/assets/images/social-links&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -58,10 +60,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\social-links" />
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\work" />
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images" />
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\skills" />
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\trusted-by" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\social-links" />
     </key>
   </component>
@@ -111,7 +116,9 @@
       <workItem from="1702605825350" duration="1355000" />
       <workItem from="1702650330344" duration="21000" />
       <workItem from="1702806239342" duration="48000" />
-      <workItem from="1703187676482" duration="215000" />
+      <workItem from="1703187676482" duration="552000" />
+      <workItem from="1703188485472" duration="19000" />
+      <workItem from="1703193619486" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -313,7 +320,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702607130523</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Store Update">
+      <option name="closed" value="true" />
+      <created>1703188127160</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1703188127160</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Store Update">
+      <option name="closed" value="true" />
+      <created>1703188178271</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1703188178271</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +360,7 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Update" />
     <MESSAGE value="Project Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Update" />
+    <MESSAGE value="Store Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Store Update" />
   </component>
 </project>
