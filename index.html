@@ -1,876 +1,868 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <meta
-      name="description"
-      content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations."
-    />
+  <meta
+          name="description"
+          content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+  />
 
-    <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Halil Ibrahim Direktor's Portfolio">
-<meta itemprop="description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Halil Ibrahim Direktor's Portfolio">
+  <meta itemprop="description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
-<!-- Reference screenshot of updated site's header in place of content -->
-<meta itemprop="image" content="assets/images/sharing-card.png">
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://ossportfolio.netlify.app">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Halil Ibrahim Direktor's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://ossportfolio.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Halil Ibrahim Direktor's Portfolio">
+  <meta property="og:description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta property="og:image" content="assets/images/sharing-card.png">
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Halil Ibrahim Direktor's Portfolio">
-<meta name="twitter:description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Halil Ibrahim Direktor's Portfolio">
+  <meta name="twitter:description" content="Welcome to my portfolio website. I am a backend mobile and web developer and I specialize in embedded systems. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta name="twitter:image" content="assets/images/sharing-card.png">
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
 
 
-<!-- Update favicon href attribute with image of yourself -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicons.png"
-      type="image/png"
-    />
+  <!-- Update favicon href attribute with image of yourself -->
+  <link
+          rel="shortcut icon"
+          href="assets/images/favicons.png"
+          type="image/png"
+  />
 
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link
+          rel="preload"
+          href="assets/fonts/Mona-Sans.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin
+  />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
-    <title>Halil Ibrahim Direktor's Portfolio</title>
-  </head>
+  <title>Halil Ibrahim Direktor's Portfolio</title>
+</head>
 
-  <body>
+<body>
 
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
+<script>
+  const theme = localStorage.getItem("theme") || "dark";
+  document.body.classList.add(theme);
+</script>
 
-    <header class="header">
+<header class="header">
 
-      <div class="menu-btn-container">
-        <div class="container">
-          <div id="nav-icon1" class="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <button type="button" class="menu-btn" style="display: none;">menu</button>
+  <div class="menu-btn-container">
+    <div class="container">
+      <div id="nav-icon1" class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button type="button" class="menu-btn" style="display: none;">menu</button>
+    </div>
+  </div>
+
+  <nav class="nav hidden">
+    <ol class="nav-items">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#work">My Work</a></li>
+      <!--<li class="nav-item"><a href="#blog">See Blog</a></li> -->
+      <li class="nav-item"><a href="#skills">My Skills</a></li>
+      <li class="nav-item"><a href="cv.html">CV</a></li>
+      <li class="nav-item">
+        <a href="#contact" data-focused="last-focused">Contact</a>
+      </li>
+    </ol>
+  </nav>
+
+  <div class="container">
+    <div class="header-textbox">
+      <h1 class="h1">
+        Hi, I'm Halil Ibrahim Direktor<br/>
+        <p style="font-size: large">Backend <span class="text-degrade">&&</span> Mobile <span class="text-degrade">&&</span> Embedded Software Developer</p>
+      </h1>
+
+      <p class="header-text">
+
+        I am a "Mechatronics Engineer" and also i am a backend && mobile && embedded systems software developer. With years of experience in data management, security, and user experience, I specialize in transforming complex problems into simple and effective solutions, aiming to develop powerful and secure applications!
+      </p>
+
+      <div class="header-btns">
+        <a href="#contact" class="btn btn-cta">Hire me</a>
+        <a href="#work" class="btn btn-secondary">See my work</a>
+        <a href="cv.html" class="btn btn-secondary">CV</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="client">
+    <div class="container">
+      <h2 class="h2">Trusted by</h2>
+      <div class="logos">
+        <div class="logo-group">
+          <img
+                  src="assets/images/trusted-by/ondergrup.svg"
+                  alt="Önder Grup"
+                  class="logo"
+          />
+        </div>
+        <div class="logo-group">
+          <img
+                  src="assets/images/trusted-by/lebara.svg"
+                  alt="Lebara"
+                  class="logo"
+          />
+        </div>
+        <div class="logo-group">
+          <img
+                  src="assets/images/trusted-by/woma.png"
+                  alt="Woma"
+                  class="logo"
+          />
         </div>
       </div>
+    </div>
+  </section>
 
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">My Work</a></li>
-          <!--<li class="nav-item"><a href="#blog">See Blog</a></li> -->
-          <li class="nav-item"><a href="#skills">My Skills</a></li>
-          <li class="nav-item"><a href="cv.html">CV</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
-          </li>
-        </ol>
-      </nav>
+  <section class="work">
+    <div class="container">
+      <h2 class="h2" id="work">Selected Work</h2>
+      <div class="work-boxes">
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">GelKurye Mobile</h3>
+            <p class="work-text">
+              It is a special project developed for GelKurye. The aim is to develop the moto courier industry and ensure their digitalization.
+            </p>
+            <ol class="work-technologies">
+              <li>MySQL</li>
+              <li>Hibernate</li>
+              <li>Java</li>
+              <li>Swift</li>
+              <li>Spring Boot</li>
+            </ol>
 
-      <div class="container">
-        <div class="header-textbox">
-          <h1 class="h1">
-            Hi, I'm Halil Ibrahim Direktor<br/>
-            <p style="font-size: large">Backend <span class="text-degrade">&&</span> Mobile <span class="text-degrade">&&</span> Embedded Software Developer</p>
-          </h1>
+            <div class="work-links">
+              <a href="https://gelkurye.com" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
 
-          <p class="header-text">
-
-            I am a "Mechatronics Engineer" and also i am a backend && mobile && embedded systems software developer. With years of experience in data management, security, and user experience, I specialize in transforming complex problems into simple and effective solutions, aiming to develop powerful and secure applications!
-          </p>
-
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Hire me</a>
-            <a href="#work" class="btn btn-secondary">See my work</a>
-            <a href="cv.html" class="btn btn-secondary">CV</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="client">
-        <div class="container">
-          <h2 class="h2">Trusted by</h2>
-          <div class="logos">
-            <div class="logo-group">
-              <img
-                src="assets/images/trusted-by/ondergrup.svg"
-                alt="Önder Grup"
-                class="logo"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                src="assets/images/trusted-by/lebara.svg"
-                alt="Lebara"
-                class="logo"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                src="assets/images/trusted-by/woma.png"
-                alt="Woma"
-                class="logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Selected Work</h2>
-          <div class="work-boxes">
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">GelKurye Mobile</h3>
-                <p class="work-text">
-                  It is a special project developed for GelKurye. The aim is to develop the moto courier industry and ensure their digitalization.
-                </p>
-                <ol class="work-technologies">
-                  <li>MySQL</li>
-                  <li>Hibernate</li>
-                  <li>Java</li>
-                  <li>Swift</li>
-                  <li>Spring Boot</li>
-                </ol>
-
-                <div class="work-links">
-                  <a href="https://gelkurye.com" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-
-                  <a
-                          href="https://gelkurye.com"
-                          target="_blank"
-                          rel="noopener"
-                          title="Website"
-                  >
-                  </a>
-                </div>
-              </div>
-
-
-              <picture class="work-img">
-                <img
-                        src="assets/images/work/gelkurye-mobile-2.png"
-                        alt="GelKurye"
-                        width="400" height="200"
-                />
-                <img
-                        src="assets/images/work/gelkurye-mobile-4.png"
-                        alt="GelKurye"
-                        width="400" height="200"
-                />
-                <img
-                        src="assets/images/work/gelkurye-mobile-5.png"
-                        alt="GelKurye"
-                        width="400" height="200"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">GelKurye Website</h3>
-                <p class="work-text">
-                  It is a special project developed for GelKurye. The aim is to develop the moto courier industry and ensure their digitalization.
-                </p>
-                <ol class="work-technologies">
-                  <li>php</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ol>
-
-                <div class="work-links">
-                  <a href="https://gelkurye.com" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-
-                  <a
+              <a
                       href="https://gelkurye.com"
                       target="_blank"
                       rel="noopener"
                       title="Website"
-                  >
-                  </a>
-                </div>
-              </div>
-
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/gelkurye.png"
-                  alt="GelKurye"
-                />
-              </picture>
+              >
+              </a>
             </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Hydraulic Calculation</h3>
-                <p class="work-text">
-                  It is a special project developed for Önder Grup. The aim is to calculate hydraulic units and store them in the database to enable engineer-based tracking of hydraulic units.
-                </p>
-                <ol class="work-technologies">
-                  <li>Java</li>
-                  <li>JavaFX</li>
-                  <li>Node.js</li>
-                  <li>MySQL</li>
-                  <li>Docker</li>
-                </ol>
+          </div>
 
-                <div class="work-links">
-                  <a href="https://github.com/Onder-Grup/Hydraulic-Tool" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
 
-                  <a
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/gelkurye-mobile-2.png"
+                    alt="GelKurye"
+                    width="400" height="200"
+            />
+            <img
+                    src="assets/images/work/gelkurye-mobile-4.png"
+                    alt="GelKurye"
+                    width="400" height="200"
+            />
+            <img
+                    src="assets/images/work/gelkurye-mobile-5.png"
+                    alt="GelKurye"
+                    width="400" height="200"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">GelKurye Website</h3>
+            <p class="work-text">
+              It is a special project developed for GelKurye. The aim is to develop the moto courier industry and ensure their digitalization.
+            </p>
+            <ol class="work-technologies">
+              <li>php</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+
+            <div class="work-links">
+              <a href="https://gelkurye.com" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+
+              <a
+                      href="https://gelkurye.com"
+                      target="_blank"
+                      rel="noopener"
+                      title="Website"
+              >
+              </a>
+            </div>
+          </div>
+
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/gelkurye.png"
+                    alt="GelKurye"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Hydraulic Calculation</h3>
+            <p class="work-text">
+              It is a special project developed for Önder Grup. The aim is to calculate hydraulic units and store them in the database to enable engineer-based tracking of hydraulic units.
+            </p>
+            <ol class="work-technologies">
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>Node.js</li>
+              <li>MySQL</li>
+              <li>Docker</li>
+            </ol>
+
+            <div class="work-links">
+              <a href="https://github.com/Onder-Grup/Hydraulic-Tool" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+
+              <a
                       href="https://github.com/Onder-Grup/Hydraulic-Tool"
                       target="_blank"
                       rel="noopener"
                       title="Source Code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <picture class="work-img">
+              >
                 <img
-                  src="assets/images/work/hydraulic-1.png"
-                  alt="Önder Grup"
+                        src="assets/images/social-links/github.svg"
+                        alt="GitHub"
+                        loading="lazy"
                 />
-                <img
-                  src="assets/images/work/hydraulic-2.png"
-                  alt="Önder Grup"
-                />
-              </picture>
+              </a>
             </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Önder Grup Mobile</h3>
+          </div>
 
-                <p class="work-text">It is a special IoT project developed for Önder Grup. The aim is to increase customers' control over the products they purchase.</p>
-                <ol class="work-technologies">
-                  <li>Java</li>
-                  <li>Node.js</li>
-                  <li>MySQL</li>
-                  <li>Docker</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://play.google.com/store/apps/details?id=me.t3sl4.ondergrup" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/hydraulic-1.png"
+                    alt="Önder Grup"
+            />
+            <img
+                    src="assets/images/work/hydraulic-2.png"
+                    alt="Önder Grup"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Önder Grup Mobile</h3>
 
-                  <a
+            <p class="work-text">It is a special IoT project developed for Önder Grup. The aim is to increase customers' control over the products they purchase.</p>
+            <ol class="work-technologies">
+              <li>Java</li>
+              <li>Node.js</li>
+              <li>MySQL</li>
+              <li>Docker</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://play.google.com/store/apps/details?id=me.t3sl4.ondergrup" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+
+              <a
                       href="https://play.google.com/store/apps/details?id=me.t3sl4.ondergrup"
                       target="_blank"
                       rel="noopener"
                       title="Play Store"
-                  >
-                    <img
-                      src="assets/images/social-links/playstore.svg"
-                      alt="Play Store"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
+              >
                 <img
-                  src="assets/images/work/ondergrupmobile.png"
-                  alt="Önder Grup"
+                        src="assets/images/social-links/playstore.svg"
+                        alt="Play Store"
+                        loading="lazy"
                 />
-              </picture>
+              </a>
             </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Önder Grup RESTful</h3>
+          </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/ondergrupmobile.png"
+                    alt="Önder Grup"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Önder Grup RESTful</h3>
 
-                <p class="work-text">It is a special RESTful API project developed for Önder Grup. The aim is to manage whole data between Hydraulic, Mobile and STM32 board.</p>
-                <ol class="work-technologies">
-                  <li>Node.js</li>
-                  <li>MySQL</li>
-                  <li>Docker</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://github.com/Onder-Grup/ondergrup-backend-api" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
+            <p class="work-text">It is a special RESTful API project developed for Önder Grup. The aim is to manage whole data between Hydraulic, Mobile and STM32 board.</p>
+            <ol class="work-technologies">
+              <li>Node.js</li>
+              <li>MySQL</li>
+              <li>Docker</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://github.com/Onder-Grup/ondergrup-backend-api" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
 
-                  <a
+              <a
                       href="https://github.com/Onder-Grup/ondergrup-backend-api"
                       target="_blank"
                       rel="noopener"
                       title="Source Code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
+              >
                 <img
-                  src="assets/images/work/ondergruprestful.png"
-                  alt="Önder Grup"
+                        src="assets/images/social-links/github.svg"
+                        alt="GitHub"
+                        loading="lazy"
                 />
-              </picture>
+              </a>
             </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Önder Grup Embedded</h3>
+          </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/ondergruprestful.png"
+                    alt="Önder Grup"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Önder Grup Embedded</h3>
 
-                <p class="work-text">It is a special Embedded Update project developed for Önder Grup.</p>
-                <p class="work-text"><span style="color:red; font-weight:bold;">**</span> This work only includes IoT upgrade. It does not represent all embedded system software written.</p>
-                <ol class="work-technologies">
-                  <li>C</li>
-                  <li>FreeRTOS</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://github.com/Onder-Grup/ondergrup-stm32" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
+            <p class="work-text">It is a special Embedded Update project developed for Önder Grup.</p>
+            <p class="work-text"><span style="color:red; font-weight:bold;">**</span> This work only includes IoT upgrade. It does not represent all embedded system software written.</p>
+            <ol class="work-technologies">
+              <li>C</li>
+              <li>FreeRTOS</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://github.com/Onder-Grup/ondergrup-stm32" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
 
-                  <a
+              <a
                       href="https://github.com/Onder-Grup/ondergrup-stm32"
                       target="_blank"
                       rel="noopener"
                       title="Source Code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
+              >
                 <img
-                  src="assets/images/work/ondergrupembedded.png"
-                  alt="Önder Grup"
+                        src="assets/images/social-links/github.svg"
+                        alt="GitHub"
+                        loading="lazy"
                 />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Coffee Shop Manager</h3>
-                <p class="work-text">
-                  Website for Coffee Shop A dedicated space for caffeine enthusiasts.
-                </p>
-                <ol class="work-technologies">
-                  <li>php</li>
-                  <li>Laravel</li>
-                  <li>MySQL</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://csm.hidirektor.com.tr" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/coffeeshop.png"
-                  alt="Coffee Shop Manager"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">Dünyayı Güzellik Kurtaracak</h3>
-                <p class="work-text">
-                  The website prepared for the Dünyayı Güzellik Kurtaracak community, which consists entirely of volunteers.
-                </p>
-                <ol class="work-technologies">
-                  <li>Wordpress</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://dunyayiguzellikkurtaracak.com" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/dunyayiguzellikkurtaracak.png"
-                  alt="Dünyayı Güzellik Kurtaracak"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">YST Mühendislik</h3>
-                <p class="work-text">
-                  Website prepared for YST Engineering.
-                </p>
-                <ol class="work-technologies">
-                  <li>php</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://yst.com.tr" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/ystmuhendislik.png"
-                  alt="YST Mühendislik"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">GrupHS Makina</h3>
-                <p class="work-text">
-                  Website prepared for GrupHS Makina.
-                </p>
-                <ol class="work-technologies">
-                  <li>Wordpress</li>
-                  <li>CSS</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://gruphs.com.tr" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/gruphs.png"
-                  alt="GrupHS Makina"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <h3 class="h3">35 Akustik</h3>
-                <p class="work-text">
-                  Website prepared for 35 Akustik.
-                </p>
-                <ol class="work-technologies">
-                  <li>Wordpress</li>
-                  <li>CSS</li>
-                </ol>
-                <div class="work-links">
-                  <a href="https://35akustik.com" target="_blank" rel="noopener" class="link"
-                  >Explore this project</a
-                  >
-                  </a>
-                </div>
-              </div>
-              <picture class="work-img">
-                <img
-                  src="assets/images/work/35akustik.png"
-                  alt="35 Akustik"
-                />
-              </picture>
+              </a>
             </div>
           </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/ondergrupembedded.png"
+                    alt="Önder Grup"
+            />
+          </picture>
         </div>
-      </section>
-
-      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
-      <section class="article">
-        <div class="container">
-          <h2 class="h2" id="blog">My Articles</h2>
-          <div class="article-boxes">
-            <article class="article-box featured-article">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h3">
-                    Sending HTTP Requests on Embedded Systems based USART
-                  </h3>
-                  <p class="article-text">
-                    As an embedded systems enthusiast, in this article, I will discuss one of the most crucial communication protocols for an embedded system…
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://medium.com/@hidirektor/sending-http-requests-on-embedded-systems-based-usart-f1b39dfebbb6" class="link" target="_blank" rel="noopener"
-                    >Continue Reading</a
-                  >
-                  <span class="reaction-count">
-                    <img src="./assets/images/heart-outline.svg" alt="heart" />
-                    416
-                  </span>
-                </div>
-              </div>
-              <picture class="article-illustration">
-                <img
-                  src="assets/images/httpreq.png"
-                  alt="MacBook Pro"
-                  loading="lazy"
-                />
-              </picture>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">TBA</h3>
-                  <p class="article-text">
-                    TBA
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    47
-                  </span>
-                </div>
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">
-                    TBA ✨
-                  </h3>
-                  <p class="article-text">
-                    TBA
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    177
-                  </span>
-                </div>
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">TBA</h3>
-                  <div class="article-text">
-                    TBA
-                  </div>
-                </div>
-                <div class="article-info">
-                  <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      loading="lazy"
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                    />
-                    350
-                  </span>
-                </div>
-              </div>
-            </article>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Coffee Shop Manager</h3>
+            <p class="work-text">
+              Website for Coffee Shop A dedicated space for caffeine enthusiasts.
+            </p>
+            <ol class="work-technologies">
+              <li>php</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://csm.hidirektor.com.tr" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+              </a>
+            </div>
           </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/coffeeshop.png"
+                    alt="Coffee Shop Manager"
+            />
+          </picture>
         </div>
-      </section>
-
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/java.png" alt="Java" class="skills-img" loading="lazy" title="Java">
-                <img src="assets/images/skills/c.png" alt="C" class="skills-img" loading="lazy" title="C">
-                 <img src="assets/images/skills/cpp.png" alt="C++" class="skills-img" loading="lazy" title="C++">
-                 <img src="assets/images/skills/php.png" alt="php" class="skills-img" loading="lazy" title="php">
-                 <img src="assets/images/skills/laravel.png" alt="Laravel" class="skills-img" loading="lazy" title="Laravel">
-                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
-                 <img src="assets/images/skills/node.png" alt="NodeJS" class="skills-img" loading="lazy" title="NodeJS">
-                 <img src="assets/images/skills/mysql.png" alt="MySQL" class="skills-img" loading="lazy" title="MySQL">
-                 <img src="assets/images/skills/mongo.png" alt="MongoDB" class="skills-img" loading="lazy" title="MongoDB">
-                 <img src="assets/images/skills/docker.png" alt="Docker" class="skills-img" loading="lazy" title="Docker">
-                 <img src="assets/images/skills/freertos.png" alt="FreeRTOS" class="skills-img" loading="lazy" title="FreeRTOS">
-                 <img src="assets/images/skills/android.png" alt="Android" class="skills-img" loading="lazy" title="Android">
-                 <img src="assets/images/skills/wordpress.webp" alt="WordPress" class="skills-img" loading="lazy" title="WordPress">
-                 <img src="assets/images/skills/powershell.png" alt="PowerShell" class="skills-img" loading="lazy" title="PowerShell">
-                 <img src="assets/images/skills/matlab.png" alt="Matlab" class="skills-img" loading="lazy" title="Matlab">
-            </figure>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Dünyayı Güzellik Kurtaracak</h3>
+            <p class="work-text">
+              The website prepared for the Dünyayı Güzellik Kurtaracak community, which consists entirely of volunteers.
+            </p>
+            <ol class="work-technologies">
+              <li>Wordpress</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://dunyayiguzellikkurtaracak.com" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+              </a>
+            </div>
           </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/dunyayiguzellikkurtaracak.png"
+                    alt="Dünyayı Güzellik Kurtaracak"
+            />
+          </picture>
         </div>
-      </section>
-
-      <!--<section>
-        <h2 class="h2">Testimonials</h2>
-        <div class="container">
-          <ol class="testimonials">
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Working with Syed was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/rich-harris.png"
-                  alt="Rich Harris"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Harris Kareem</h3>
-                  <p class="testimonial-author-job">Developer @Outlets</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation. He's the only designer I know who also has a deep understanding for code and front-end development.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/frank-mcsherry.webp"
-                  alt="Andrew Mead"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">
-                   Andrew Mead
-                  </h3>
-                  <p class="testimonial-author-job">Chief Scientist @Logos
-                  </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-
-                Talented artist, experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/brian-hirsh.png"
-                  alt="Brian Hirsh"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Brian Hirsh</h3>
-                  <p class="testimonial-author-job">Head @Zero-in</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a true professional with amazing talent. He is a creative
-                thinker, has his finger on the pulse of whats to come, and
-                absolutely one of the quickest and best problem solvers I have
-                ever met.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/adam.png"
-                  alt="Adam Argalye"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Adam Argalye</h3>
-                  <p class="testimonial-author-job">SWE @Google</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-               Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/val-head.png"
-                  alt="Val Head"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Val Head</h3>
-                  <p class="testimonial-author-job">CEO @Engines</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a talented artist. He is very experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/tim-satterwhite.webp"
-                  alt="Gary Simon"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Gary Simon</h3>
-                  <p class="testimonial-author-job">A11y Advocate @W3C</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ol>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">YST Mühendislik</h3>
+            <p class="work-text">
+              Website prepared for YST Engineering.
+            </p>
+            <ol class="work-technologies">
+              <li>php</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://yst.com.tr" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+              </a>
+            </div>
+          </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/ystmuhendislik.png"
+                    alt="YST Mühendislik"
+            />
+          </picture>
         </div>
-      </section>-->
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">GrupHS Makina</h3>
+            <p class="work-text">
+              Website prepared for GrupHS Makina.
+            </p>
+            <ol class="work-technologies">
+              <li>Wordpress</li>
+              <li>CSS</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://gruphs.com.tr" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+              </a>
+            </div>
+          </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/gruphs.png"
+                    alt="GrupHS Makina"
+            />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">35 Akustik</h3>
+            <p class="work-text">
+              Website prepared for 35 Akustik.
+            </p>
+            <ol class="work-technologies">
+              <li>Wordpress</li>
+              <li>CSS</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://35akustik.com" target="_blank" rel="noopener" class="link"
+              >Explore this project</a
+              >
+              </a>
+            </div>
+          </div>
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/35akustik.png"
+                    alt="35 Akustik"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">Send Message</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                Available for hire
-              </strong>
-              <p class="contact-text">
-                As a mechatronics engineer and also as a backend software developer, I construct fully completed turnkey embedded || mobile || RESTfull projects. I tend to code things from scratch and enjoy bringing ideas to life.
+  <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+
+  <section class="article">
+    <div class="container">
+      <h2 class="h2" id="blog">My Articles</h2>
+      <div class="article-boxes">
+        <article class="article-box featured-article">
+          <div class="article-textbox">
+            <div>
+              <h3 class="h3">
+                Sending HTTP Requests on Embedded Systems based USART
+              </h3>
+              <p class="article-text">
+                As an embedded systems enthusiast, in this article, I will discuss one of the most crucial communication protocols for an embedded system…
               </p>
             </div>
-            <form action="sendemail.php" method="POST" class="contact-form" netlify>
-              <div class="form-field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
-              </div>
-              <div class="form-field">
-                <label for="message">How can I help you?</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-cta">Send</button>
-            </form>
+            <div class="article-info">
+              <a href="https://medium.com/@hidirektor/sending-http-requests-on-embedded-systems-based-usart-f1b39dfebbb6" class="link" target="_blank" rel="noopener"
+              >Continue Reading</a>
+              <span class="reaction-count">
+                    <a href="https://medium.com/@hidirektor/sending-http-requests-on-embedded-systems-based-usart-f1b39dfebbb6" class="link" target="_blank" rel="noopener"
+                    ><img src="./assets/images/heart-outline.svg" alt="heart" /></a>
+                  </span>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+          <picture class="article-illustration">
+            <img
+                    src="assets/images/httpreq.png"
+                    alt="MacBook Pro"
+                    loading="lazy"
+            />
+          </picture>
+        </article>
+        <article class="article-box">
+          <div class="article-textbox">
+            <div>
+              <h3 class="h4">STM32 Yazılımını OTA ile Güncelleme</h3>
+              <p class="article-text">
+                Gömülü sistem yazılımlarında belki de en kritik aşama geliştirilen yazılımın uzaktan güncellenebiliyor olmasıdır. Geliştirdiğiniz yazılımı müşterinize sunduktan sonra yazılımsal bir iyileştirme, bug fix ya da genel optimizasyon süreçleri için yazılımın barındığı kartı ya da ürünü müşteriden geri almak hem abesle iştigal edecektir hem de lojistik...
+              </p>
+            </div>
+            <div class="article-info">
+              <a href="https://medium.com/@hidirektor/stm32-yaz%C4%B1l%C4%B1m%C4%B1n%C4%B1-ota-ile-g%C3%BCncelleme-39a7ab405b46" class="link" target="_blank" rel="noopener"
+              >Continue reading</a
+              >
+              <span class="reaction-count">
+                    <a href="https://medium.com/@hidirektor/stm32-yaz%C4%B1l%C4%B1m%C4%B1n%C4%B1-ota-ile-g%C3%BCncelleme-39a7ab405b46"><img
+                            src="./assets/images/heart-outline.svg"
+                            alt="heart"
+                            loading="lazy"
+                    /></a>
+                  </span>
+            </div>
+          </div>
+        </article>
+        <article class="article-box">
+          <div class="article-textbox">
+            <div>
+              <h3 class="h4">
+                TBA ✨
+              </h3>
+              <p class="article-text">
+                TBA
+              </p>
+            </div>
+            <div class="article-info">
+              <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener">Continue reading</a>
+              <span class="reaction-count">
+                    <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener">
+                      <img
+                              src="./assets/images/heart-outline.svg"
+                              alt="heart"
+                              loading="lazy"/></a>
+                  </span>
+            </div>
+          </div>
+        </article>
+        <article class="article-box">
+          <div class="article-textbox">
+            <div>
+              <h3 class="h4">TBA</h3>
+              <div class="article-text">
+                TBA
+              </div>
+            </div>
+            <div class="article-info">
+              <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener">Continue reading</a>
+              <span class="reaction-count">
+                    <a href="https://github.com/hidirektor" class="link" target="_blank" rel="noopener">
+                      <img
+                              loading="lazy"
+                              src="./assets/images/heart-outline.svg"
+                              alt="heart"/></a>
+                  </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/hidirektor" target="_blank" rel="noopener"
-                  ><img
+  <section class="skills">
+    <div class="container">
+      <h2 class="h2" id="skills">My Toolkit</h2>
+      <div class="skills-imgs">
+        <img src="assets/images/skills/java.png" alt="Java" class="skills-img" loading="lazy" title="Java">
+        <img src="assets/images/skills/c.png" alt="C" class="skills-img" loading="lazy" title="C">
+        <img src="assets/images/skills/cpp.png" alt="C++" class="skills-img" loading="lazy" title="C++">
+        <img src="assets/images/skills/php.png" alt="php" class="skills-img" loading="lazy" title="php">
+        <img src="assets/images/skills/laravel.png" alt="Laravel" class="skills-img" loading="lazy" title="Laravel">
+        <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+        <img src="assets/images/skills/node.png" alt="NodeJS" class="skills-img" loading="lazy" title="NodeJS">
+        <img src="assets/images/skills/mysql.png" alt="MySQL" class="skills-img" loading="lazy" title="MySQL">
+        <img src="assets/images/skills/mongo.png" alt="MongoDB" class="skills-img" loading="lazy" title="MongoDB">
+        <img src="assets/images/skills/docker.png" alt="Docker" class="skills-img" loading="lazy" title="Docker">
+        <img src="assets/images/skills/freertos.png" alt="FreeRTOS" class="skills-img" loading="lazy" title="FreeRTOS">
+        <img src="assets/images/skills/android.png" alt="Android" class="skills-img" loading="lazy" title="Android">
+        <img src="assets/images/skills/wordpress.webp" alt="WordPress" class="skills-img" loading="lazy" title="WordPress">
+        <img src="assets/images/skills/powershell.png" alt="PowerShell" class="skills-img" loading="lazy" title="PowerShell">
+        <img src="assets/images/skills/matlab.png" alt="Matlab" class="skills-img" loading="lazy" title="Matlab">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!--<section>
+    <h2 class="h2">Testimonials</h2>
+    <div class="container">
+      <ol class="testimonials">
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+            Working with Syed was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/rich-harris.png"
+              alt="Rich Harris"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">Harris Kareem</h3>
+              <p class="testimonial-author-job">Developer @Outlets</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+            Syed is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation. He's the only designer I know who also has a deep understanding for code and front-end development.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/frank-mcsherry.webp"
+              alt="Andrew Mead"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">
+               Andrew Mead
+              </h3>
+              <p class="testimonial-author-job">Chief Scientist @Logos
+              </p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+
+            Talented artist, experienced with various
+            media and can make any project you are working on look good. He is
+            easy to work with and is a self starter. I would work with Syed
+            again.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/brian-hirsh.png"
+              alt="Brian Hirsh"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">Brian Hirsh</h3>
+              <p class="testimonial-author-job">Head @Zero-in</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+            Syed is a true professional with amazing talent. He is a creative
+            thinker, has his finger on the pulse of whats to come, and
+            absolutely one of the quickest and best problem solvers I have
+            ever met.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/adam.png"
+              alt="Adam Argalye"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">Adam Argalye</h3>
+              <p class="testimonial-author-job">SWE @Google</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+           Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/val-head.png"
+              alt="Val Head"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">Val Head</h3>
+              <p class="testimonial-author-job">CEO @Engines</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="testimonial">
+          <blockquote class="testimonial-text">
+            Syed is a talented artist. He is very experienced with various
+            media and can make any project you are working on look good. He is
+            easy to work with and is a self starter. I would work with Syed
+            again.
+          </blockquote>
+          <figure class="testimonial-author">
+            <img
+              src="assets/images/testimonials/tim-satterwhite.webp"
+              alt="Gary Simon"
+              loading="lazy"
+            />
+            <figcaption>
+              <h3 class="testimonial-author-name">Gary Simon</h3>
+              <p class="testimonial-author-job">A11y Advocate @W3C</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ol>
+    </div>
+  </section>-->
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="h2" id="contact">Send Message</h2>
+      <div class="contact-content">
+        <div class="contact-textbox">
+          <strong href="#" class="hire-alert">
+            <span class="indicator"></span>
+            Available for hire
+          </strong>
+          <p class="contact-text">
+            As a mechatronics engineer and also as a backend software developer, I construct fully completed turnkey embedded || mobile || RESTfull projects. I tend to code things from scratch and enjoy bringing ideas to life.
+          </p>
+        </div>
+        <form action="sendemail.php" method="POST" class="contact-form" netlify>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    inputmode="email"
+            />
+          </div>
+          <div class="form-field">
+            <label for="message">How can I help you?</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <nav>
+        <ol class="footer-links">
+          <li class="footer-link">
+            <a title="GitHub" href="https://github.com/hidirektor" target="_blank" rel="noopener"
+            ><img
                     loading="lazy"
                     src="assets/images/social-links/github.svg"
                     alt="GitHub"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/hidirektor/" target="_blank" rel="noopener"
-                  ><img
+            /></a>
+          </li>
+          <li class="footer-link">
+            <a title="Linkedin" href="https://www.linkedin.com/in/hidirektor/" target="_blank" rel="noopener"
+            ><img
                     loading="lazy"
                     src="assets/images/social-links/linkedin.svg"
                     alt="Linkedin"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Instagram" href="https://instagram.com/hidirektor" target="_blank" rel="noopener"
-                  ><img
+            /></a>
+          </li>
+          <li class="footer-link">
+            <a title="Instagram" href="https://instagram.com/hidirektor" target="_blank" rel="noopener"
+            ><img
                     loading="lazy"
                     src="assets/images/social-links/instagram.svg"
                     alt="Instagram"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="PlayStore" href="https://play.google.com/store/apps/dev?id=8231698879028922819" target="_blank" rel="noopener"
-                ><img
-                        loading="lazy"
-                        src="assets/images/social-links/playstore.svg"
-                        alt="PlayStore"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="AppStore" href="https://play.google.com/store/apps/dev?id=8231698879028922819" target="_blank" rel="noopener"
-                ><img
-                        loading="lazy"
-                        src="assets/images/social-links/appstore.svg"
-                        alt="AppStore"
-                /></a>
-              </li>
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2023</span> Halil İbrahim Direktör - designed & created by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin</a> & upgraded by <a target="_blank" rel="noopener" href="https://github.com/hidirektor">hidirektor.</a>
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
-        </div>
-      </div>
-    </footer>
+            /></a>
+          </li>
+          <li class="footer-link">
+            <a title="PlayStore" href="https://play.google.com/store/apps/dev?id=8231698879028922819" target="_blank" rel="noopener"
+            ><img
+                    loading="lazy"
+                    src="assets/images/social-links/playstore.svg"
+                    alt="PlayStore"
+            /></a>
+          </li>
+          <li class="footer-link">
+            <a title="AppStore" href="https://play.google.com/store/apps/dev?id=8231698879028922819" target="_blank" rel="noopener"
+            ><img
+                    loading="lazy"
+                    src="assets/images/social-links/appstore.svg"
+                    alt="AppStore"
+            /></a>
+          </li>
+        </ol>
+      </nav>
+      <p class="footer-text">
+        &copy; <span>2023</span> Halil İbrahim Direktör - designed & created by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin</a> & upgraded by <a target="_blank" rel="noopener" href="https://github.com/hidirektor">hidirektor.</a>
+      </p>
+      <label class="theme-switch" for="theme-switch">
+        <span>Dark Theme</span>
+        <input type="checkbox" id="theme-switch" role="switch"/>
+      </label>
+    </div>
+  </div>
+</footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var errorParam = urlParams.get('error');
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var errorParam = urlParams.get('error');
 
-        if (errorParam === '1') {
-          alert('Sorry, your message could not be sent. Please try again.');
-        }
-      });
+    if (errorParam === '1') {
+      alert('Sorry, your message could not be sent. Please try again.');
+    }
+  });
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var successParam = urlParams.get('success');
+  document.addEventListener("DOMContentLoaded", function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var successParam = urlParams.get('success');
 
-        if (successParam === '1') {
-          alert('Your message has been sent! Thank you.');
-        }
-      });
-    </script>
-  </body>
+    if (successParam === '1') {
+      alert('Your message has been sent! Thank you.');
+    }
+  });
+</script>
+</body>
 </html>
