@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Thesis Update">
-      <change beforePath="$PROJECT_DIR$/assets/pdf/resume.pdf" beforeDir="false" />
-    </list>
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="CV Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +129,7 @@
       <workItem from="1703193619486" duration="875000" />
       <workItem from="1703705396191" duration="109000" />
       <workItem from="1703977641031" duration="373000" />
-      <workItem from="1717245792453" duration="1016000" />
+      <workItem from="1717245792453" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -357,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717246159189</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="CV Update">
+      <option name="closed" value="true" />
+      <created>1717247701012</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1717247701012</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +373,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="CV Update" />
     <MESSAGE value="PlayStore Update" />
     <MESSAGE value="Work Update" />
     <MESSAGE value="Hamburger Icon" />
@@ -383,6 +388,7 @@
     <MESSAGE value="Project Update" />
     <MESSAGE value="Store Update" />
     <MESSAGE value="Thesis Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thesis Update" />
+    <MESSAGE value="CV Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="CV Update" />
   </component>
 </project>
