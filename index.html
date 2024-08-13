@@ -54,6 +54,33 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 
+  <style>
+    /* Stil ekleyebiliriz */
+    .portfolio-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .category-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .category-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .work-box {
+      display: none;
+    }
+
+    .work-box.active {
+      display: flex;
+    }
+  </style>
+
   <title>Halil Ibrahim Direktor's Portfolio</title>
 </head>
 
@@ -171,8 +198,50 @@
   <section class="work">
     <div class="container">
       <h2 class="h2" id="work">Selected Work</h2>
-      <div class="work-boxes">
-        <div class="work-box">
+      <div class="category-buttons">
+        <button class="btn btn-secondary" onclick="filterWork('all')">All</button>
+        <button class="btn btn-secondary" onclick="filterWork('RESTful')">RESTful</button>
+        <button class="btn btn-secondary" onclick="filterWork('Embedded')">Embedded</button>
+        <button class="btn btn-secondary" onclick="filterWork('Web')">Web</button>
+        <button class="btn btn-secondary" onclick="filterWork('Desktop')">Desktop</button>
+        <button class="btn btn-secondary" onclick="filterWork('Wordpress')">Wordpress</button>
+        <button class="btn btn-secondary" onclick="filterWork('NativeMobile')">Native Mobile</button>
+      </div>
+      <div class="work-boxes ">
+        <div class="work-box Web">
+          <div class="work-textbox">
+            <h3 class="h3">OnderGrup Admin Dashboard</h3>
+            <p class="work-text">
+              This admin panel has been specifically developed for OnderGrup. The main objectives are to manage STM32-based machines, oversee the hydraulic units created, and efficiently administer all users within the system. This comprehensive dashboard facilitates streamlined operations and enhances control over critical system components.
+            </p>
+            <ol class="work-technologies">
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>Docker</li>
+            </ol>
+
+            <div class="work-links">
+              <a href="https://ondergrup.hidirektor.com.tr" target="_blank" rel="noopener" class="link"
+              >Explore this project</a>
+
+              <a
+                      href="https://ondergrup.hidirektor.com.tr"
+                      target="_blank"
+                      rel="noopener"
+                      title="Website"
+              >
+              </a>
+            </div>
+          </div>
+
+          <picture class="work-img">
+            <img
+                    src="assets/images/work/ondergrupadmin.png"
+                    alt="OnderGrup Admin Dashboard"
+            />
+          </picture>
+        </div>
+        <div class="work-box NativeMobile">
           <div class="work-textbox">
             <h3 class="h3">GelKurye Mobile</h3>
             <p class="work-text">
@@ -220,7 +289,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Web">
           <div class="work-textbox">
             <h3 class="h3">GelKurye Website</h3>
             <p class="work-text">
@@ -254,7 +323,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Desktop">
           <div class="work-textbox">
             <h3 class="h3">Hydraulic Calculation</h3>
             <p class="work-text">
@@ -299,7 +368,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box NativeMobile">
           <div class="work-textbox">
             <h3 class="h3">Önder Grup Mobile</h3>
 
@@ -336,7 +405,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box RESTful">
           <div class="work-textbox">
             <h3 class="h3">Önder Grup RESTful</h3>
 
@@ -372,7 +441,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Embedded">
           <div class="work-textbox">
             <h3 class="h3">Önder Grup Embedded</h3>
 
@@ -408,7 +477,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Web">
           <div class="work-textbox">
             <h3 class="h3">Coffee Shop Manager</h3>
             <p class="work-text">
@@ -433,7 +502,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Wordpress">
           <div class="work-textbox">
             <h3 class="h3">Dünyayı Güzellik Kurtaracak</h3>
             <p class="work-text">
@@ -456,7 +525,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Web">
           <div class="work-textbox">
             <h3 class="h3">YST Mühendislik</h3>
             <p class="work-text">
@@ -481,7 +550,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Wordpress">
           <div class="work-textbox">
             <h3 class="h3">GrupHS Makina</h3>
             <p class="work-text">
@@ -505,7 +574,7 @@
             />
           </picture>
         </div>
-        <div class="work-box">
+        <div class="work-box Wordpress">
           <div class="work-textbox">
             <h3 class="h3">35 Akustik</h3>
             <p class="work-text">
@@ -874,6 +943,10 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    filterWork('all');
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
     var urlParams = new URLSearchParams(window.location.search);
     var errorParam = urlParams.get('error');
 
@@ -890,6 +963,17 @@
       alert('Your message has been sent! Thank you.');
     }
   });
+</script>
+<script>
+  function filterWork(category) {
+    var workItems = document.querySelectorAll('.work-box');
+    workItems.forEach(function(item) {
+      item.classList.remove('active');
+      if (category === 'all' || item.classList.contains(category)) {
+        item.classList.add('active');
+      }
+    });
+  }
 </script>
 </body>
 </html>

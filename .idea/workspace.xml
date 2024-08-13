@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="CV Update">
-      <change afterPath="$PROJECT_DIR$/assets/images/trusted-by/gelkurye.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -33,12 +32,12 @@
     &quot;assignee&quot;: &quot;hidirektor&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/hidirektor/hidirektor-portfolio.git&quot;,
-    &quot;accountId&quot;: &quot;86204a7a-65df-4a9c-aaf2-47a7c41b63b1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hidirektor/hidirektor-portfolio.git",
+    "accountId": "29c15512-0701-485c-bf75-aa3659de7893"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,8 +83,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17011.119" />
-        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17011.119" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.361" />
+        <option value="bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.361" />
       </set>
     </attachedChunks>
   </component>
@@ -136,6 +135,7 @@
       <workItem from="1717245792453" duration="1242000" />
       <workItem from="1717395609728" duration="45000" />
       <workItem from="1718801083295" duration="326000" />
+      <workItem from="1723564750269" duration="1172000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
