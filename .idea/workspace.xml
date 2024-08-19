@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Updated Project" />
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Updated Project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +32,12 @@
     &quot;assignee&quot;: &quot;hidirektor&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/hidirektor/hidirektor-portfolio.git",
-    "accountId": "29c15512-0701-485c-bf75-aa3659de7893"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hidirektor/hidirektor-portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;29c15512-0701-485c-bf75-aa3659de7893&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -74,6 +77,7 @@
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea" />
       <recent name="C:\Users\hidir\PhpstormProjects\hidirektor-portfolio\assets\images\social-links" />
     </key>
   </component>
@@ -133,6 +137,9 @@
       <workItem from="1717395609728" duration="45000" />
       <workItem from="1718801083295" duration="326000" />
       <workItem from="1723564750269" duration="1320000" />
+      <workItem from="1723566081205" duration="15000" />
+      <workItem from="1723753225585" duration="193000" />
+      <workItem from="1724059771060" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -398,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723566071426</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Updated Project">
+      <option name="closed" value="true" />
+      <created>1723566086535</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1723566086535</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
