@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Updated Medium">
+    <list default="true" id="f020e546-83ff-4d6e-9116-0323b7e571c5" name="Changes" comment="Post Update">
+      <change afterPath="$PROJECT_DIR$/assets/images/trusted-by/dinamikbeyin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/dinamikbeyin-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/work/dinamikbeyin-2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -16,6 +19,13 @@
   <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/PHPMailer-master/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -55,8 +65,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/hidirektor/PhpstormProjects/hidirektor-portfolio/assets/pdf&quot;,
@@ -84,8 +96,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
-        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
+        <option value="bundled-js-predefined-d6986cc7102b-bed05e336f61-JavaScript-PS-243.20847.47" />
+        <option value="bundled-php-predefined-a98d8de5180a-708d7c7e423f-com.jetbrains.php.sharedIndexes-PS-243.20847.47" />
       </set>
     </attachedChunks>
   </component>
@@ -141,7 +153,10 @@
       <workItem from="1723753225585" duration="193000" />
       <workItem from="1724059771060" duration="320000" />
       <workItem from="1725648238640" duration="41000" />
-      <workItem from="1726681568049" duration="67000" />
+      <workItem from="1726681568049" duration="86000" />
+      <workItem from="1727701499719" duration="35000" />
+      <workItem from="1728897643321" duration="933000" />
+      <workItem from="1729615799887" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="Little Update">
       <option name="closed" value="true" />
@@ -423,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724059991000</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Post Update">
+      <option name="closed" value="true" />
+      <created>1726681647423</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1726681647423</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,6 +474,7 @@
     <MESSAGE value="CV Update" />
     <MESSAGE value="Updated Project" />
     <MESSAGE value="Updated Medium" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Medium" />
+    <MESSAGE value="Post Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Post Update" />
   </component>
 </project>
